@@ -111,46 +111,120 @@ def questao10():
 #=================================================== DICIONARIOS =========================================================
 
 def question1():
-    
+
     dicionario = {}
-    
+
     dicionario['nome'] = 'Nicolas'
     dicionario['Idade'] = 19
-    
+
     print(dicionario)
-    
+
 def question2():
-    
+
     meu_cadastro = {'Nome' : 'Nicolas', 'Idade' : 19 , 'Cidade' : 'Guarapuava'}
-    
+
     print(meu_cadastro)
-    
+
 def question3():
-    
+
     produtos = {'Iphone14' : 14.000,
                 'Mustang' : 159.000,
                 'Casa' : 3500.000}
-    
+
     chaves = produtos.keys()
     valores = produtos.values()
-    
+
     for chaves, valores in produtos.items():
         print(f'produto: {chaves}, seu valor é de {valores}')
-        
+
 def question4():
-    
+
     indicador = int(input("Digite um numero 1 a 3 e veja o estado correspondente: "))
-    
+
     estados = {1 : 'Seu estado é o Paraná e sua capital é Curitiba!',
                2 : 'Seu estado é Santa Catarina e sua capital é Blumenau',
                3 : 'Seu estado é Rio Grande do Sul e sua capital é Santa Rosa'}
-    
-    chaves = estados.keys()
-    valores = estados.values()
-    
-    for indicador in estados:
-        if indicador == 1:
-            print("deu certo")
+
+    print(estados[indicador])
+
+def question5():
+
+    cidades = {"Guarapuava": 300.000,
+               "Ponta Grossa": 200.000,
+               "Curitiba": 150.00,
+               "Porto Alegre": 300.000,
+               "Cidade dos Lagos": 150.000}
+
+    print("Nos temos estas cidades!")
+    for i in cidades:
+        print(i)
+
+    x = max(cidades, key=cidades.get)
+
+    print(f'Esta é a cidade mais populosa:', x)
+
+def question6():
+
+    calorias = {1 : "Almondega com 120 kcal",
+                2 : "Bife de alcategra com 268 kcal",
+                3 : "Carne bovina com 250 kcal"}
+
+    indicador = int(input("Digite um numero: "))
+
+    print(calorias[indicador], " Este é o alimento correspondete ao seu numero!")
+
+def question7():
+
+    animais = {"Cachorro" : "Mamifero",
+               "Passaro" : "Ave",
+               "Dinossauro" : "Reptil",
+               "Andorinha" : "Ave",
+               "Lagarto" : "Reptil"}
+
+    chaves = animais.keys()
+
+    for chaves in animais:
+        print(chaves)
+
+def question8():
+
+    paises = {"Brasil" : "Bandeira?",
+              "Colombia" : "Bandeira?",
+              "Paris" : "Bandeira?",
+              "Portugal" : "Bandeira?",
+              "Canadá" : "Bandeira?"}
+
+    chaves = paises.keys()
+
+    for chaves in paises:
+        print(chaves)
+
+def question9():
+
+    frutas = {"Morango" : "Vermelho",
+              "Laranja" : "Laranja",
+              "Limão" : "Verde",
+              "Pera" : "Amarelo",
+              "Jambo" : "Rosa",}
+
+    chaves = frutas.keys()
+    valores = frutas.values()
+
+    for chaves, valores in frutas.items():
+
+        print(f'A fruta é {chaves} e a cor é {valores}!')
+
+def question10():
+
+    jogos = {1 : "Truco com 4 pessoas necessarias para jogar",
+             2 : "Xadrez com 2 pessaos necessarias para jogar",
+             3 : "Volêi com 12 pessoas necessarias para jogar"}
+
+    indicador = int(input("Digite o numero que vamos lhe mostrar o jogo correspondete: "))
+
+    print(jogos[indicador])
+
+
 
     
 

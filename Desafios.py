@@ -224,9 +224,86 @@ def question10():
 
     print(jogos[indicador])
 
+#=================================================== TUPLAS =========================================================
 
+def question01():
 
+    tupla = (1, 2, 3, 4, 5)
+    print(tupla)
+
+def question02():
+
+    paises = ("Brasil", "Russia", "India")
+
+    print(paises[2])
+
+def question03():
+
+    conta = (1500.00, 100.00, 1600.00)
+
+    print(f'O valor total da conta é: {conta[1]}'
+          f'O valor da taxa de serviço é: {conta[2]}'
+          f'O valor total da compra é: {conta[3]}')
+
+def question04():
+
+    nomes = ("Nicolas", "Isabelly", "Ana", "Marcelo", "Flavia")
+    indicador = int(input("Digite um numero: "))
+
+    print(nomes[indicador])
+
+def question05():
+
+    notas = (10, 9, 6, 10)
+
+    media = sum(notas) / len(notas)
+
+    print("A media das notas é: ", media)
+
+def question06():
+
+    cores = ("Vermelho", "laranja", "amarelo", "verde", "azul", "Anil", "Violeta")
+
+    pergunta = input("Digite uma cor e vamos ver se ela faz parte do conjunto do arco-íris: ")
+    print(pergunta)
+
+    if pergunta in cores:
+
+        print("Está cor está presente no arco-íris! ")
+
+    else:
+
+        print("Está cor não está presente no arco-Iris!")
+
+def question07():
+
+    temperaturas = (30.3, 36.9, 12.3, 05.3, 15.9, 97.0)
+
+    maior = max(temperaturas)
+    minima = min(temperaturas)
+
+    print(f'A maxima dos dias da semana é: {maior}'
+          f'A minima dos dias da semana é: {minima}')
+
+def question08():
+
+    frutas = ("Morango e sua cor é Vermelho\n", "Laranja e sua cor é Laranjan\n", "Limão e sua cor é Verde\n", "Pera e sua cor é Amarelo\n", "Jambo e sua cor é Rosa\n",)
+
+    print(frutas)
     
-
-
-
+def question09():
+    
+    tupla1 = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    tupla2 = (5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+    
+    intercessao = tupla1.intercession(tupla2)
+    print(intercessao)
+    
+def question10():
+    
+    letras = ("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u")
+    vogais = ("a", "e", "i", "o", "u")
+    
+    diferenca = letras.diference(vogais)
+    
+    print(diferenca)

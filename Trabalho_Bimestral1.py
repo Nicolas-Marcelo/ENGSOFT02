@@ -18,8 +18,6 @@ def pausa():
 # Esta variavel armazena o numero da função desejada
 função_desejada = int(input("Digite o numero da função desejada: "))
 
-
-
 '''
 ========================================= OUTPUT ============================================
 '''
@@ -202,7 +200,6 @@ while True:
         
         # Seleção de qual lista quer ver
         lista = int(input("Digite a OB desejada: "))
-        print("Selecionada a OB", lista)
         
         pausa()
         
@@ -230,6 +227,9 @@ while True:
                 
                 print(f'({i}) Funionario {chaves} com a função de {valores}')
                 i = i + 1
+
+            funcionario_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {funcionario_procurado} está na obra e com a função de {funcionarios_OB0820[funcionario_procurado]}!')
                 
             break
                 
@@ -256,6 +256,11 @@ while True:
                 
                 print(f'({i}) Funionario {chaves} com a função de {valores}')
                 i = i + 1
+
+            funcionario_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {funcionario_procurado} está na obra e com a função de {funcionarios_OB0821[funcionario_procurado]}!')
+
+            break
                 
         elif lista == 825:
             print("Funionarios da OB0825: ")
@@ -280,6 +285,11 @@ while True:
                 
                 print(f'({i}) Funionario {chaves} com a função de {valores}')
                 i = i + 1
+
+            funcionario_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {funcionario_procurado} está na obra e com a função de {funcionarios_OB0825[funcionario_procurado]}!')
+
+            break
                 
         elif lista == 826:
             print("Funionarios da OB0826: ")
@@ -336,22 +346,175 @@ while True:
                 
             funcionario_procurado = input("Digite qual funcionario você está procurando: ")
             print(f'o funcionario {funcionario_procurado} está na obra e com a função de {funcionarios_OB0794[funcionario_procurado]}!')
-            
-            # Preciso conferir se um item está a lista
+
+            break
 
         else :
+
             print("Digite o indice da OB correto!")
         
-        
     elif função_desejada == 3:
-        pass
+        
+        print("Você selecionou a opção de verificação de funcionarios!")
+
+        # Seleção de qual lista quer ver
+        lista = int(input("Digite a OB desejada: "))
+        print("Selecionada a OB", lista)
+
+        if lista == 820:
+
+            print("Funionarios da OB0820: ")
+                
+            equipamentos_OB0820 = { "EQ0001" : "Onibus",
+                                    "EQ0002" : "Automovel",
+                                    "EQ0003" : "Vibro-acabadora",
+                                    "EQ0004" : "Rolo chaoa",
+                                    "EQ0005" : "Rolo pneu",
+                                    "EQ0006" : "Rolo Conrrugado",
+                                    "EQ0007" : "Automovel",
+                                    "EQ0008" : "Rolo chapa",
+                                    "EQ0009" : "Automovel"}
+            
+            chaves = equipamentos_OB0820.keys()
+            valores = equipamentos_OB0820.values()
+            
+            i = 1
+            
+            # Apresentando os equipamentos 
+            for chaves, valores in equipamentos_OB0820.items():
+            
+                print(f'({i}) Funionario {chaves} com a função de {valores}')
+                i = i + 1
+                
+            equipamento_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {equipamento_procurado} está na obra e com a função de {equipamentos_OB0820[equipamento_procurado]}!')
+
+            break
+
+        elif lista == 821:
+
+            print("Funionarios da OB0821: ")
+                
+            equipamentos_OB0821 = { "EQ0001" : "Onibus",
+                                    "EQ0002" : "Automovel",
+                                    "EQ0003" : "Vibro-acabadora",
+                                    "EQ0004" : "Rolo chaoa",
+                                    "EQ0005" : "Rolo pneu",
+                                    "EQ0006" : "Rolo Conrrugado",
+                                    "EQ0007" : "Automovel",
+                                    "EQ0008" : "Rolo chapa",
+                                    "EQ0009" : "Automovel"}
+            
+            chaves = equipamentos_OB0821.keys()
+            valores = equipamentos_OB0821.values()
+            
+            i = 1
+            
+            # Apresentando os equipamentos 
+            for chaves, valores in equipamentos_OB0821.items():
+            
+                print(f'({i}) Funionario {chaves} com a função de {valores}')
+                i = i + 1
+                
+            equipamento_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {equipamento_procurado} está na obra e com a função de {equipamentos_OB0821[equipamento_procurado]}!')
+
+            break     
+        
+        elif lista == 825:
+
+            print("Funionarios da OB0825: ")
+                
+            equipamentos_OB0825 = { "EQ0001" : "Onibus",
+                                    "EQ0002" : "Automovel",
+                                    "EQ0003" : "Vibro-acabadora",
+                                    "EQ0004" : "Rolo chaoa",
+                                    "EQ0005" : "Rolo pneu",
+                                    "EQ0006" : "Rolo Conrrugado",
+                                    "EQ0007" : "Automovel",
+                                    "EQ0008" : "Rolo chapa",
+                                    "EQ0009" : "Automovel"}
+            
+            chaves = equipamentos_OB0825.keys()
+            valores = equipamentos_OB0825.values()
+            
+            i = 1
+            
+            # Apresentando os equipamentos 
+            for chaves, valores in equipamentos_OB0825.items():
+            
+                print(f'({i}) Funionario {chaves} com a função de {valores}')
+                i = i + 1
+                
+            equipamento_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {equipamento_procurado} está na obra e com a função de {equipamentos_OB0825[equipamento_procurado]}!')
+
+            break
+
+        elif lista == 826:
+
+            print("Funionarios da OB0826: ")
+                
+            equipamentos_OB0826 = { "EQ0001" : "Onibus",
+                                    "EQ0002" : "Automovel",
+                                    "EQ0003" : "Vibro-acabadora",
+                                    "EQ0004" : "Rolo chaoa",
+                                    "EQ0005" : "Rolo pneu",
+                                    "EQ0006" : "Rolo Conrrugado",
+                                    "EQ0007" : "Automovel",
+                                    "EQ0008" : "Rolo chapa",
+                                    "EQ0009" : "Automovel"}
+            
+            chaves = equipamentos_OB0826.keys()
+            valores = equipamentos_OB0826.values()
+            
+            i = 1
+            
+            # Apresentando os equipamentos 
+            for chaves, valores in equipamentos_OB0826.items():
+            
+                print(f'({i}) Funionario {chaves} com a função de {valores}')
+                i = i + 1
+                
+            equipamento_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {equipamento_procurado} está na obra e com a função de {equipamentos_OB0826[equipamento_procurado]}!')
+
+            break
+
+        elif lista == 794:
+
+            print("Funionarios da OB0794: ")
+                
+            equipamentos_OB0794 = { "EQ0001" : "Onibus",
+                                    "EQ0002" : "Automovel",
+                                    "EQ0003" : "Vibro-acabadora",
+                                    "EQ0004" : "Rolo chaoa",
+                                    "EQ0005" : "Rolo pneu",
+                                    "EQ0006" : "Rolo Conrrugado",
+                                    "EQ0007" : "Automovel",
+                                    "EQ0008" : "Rolo chapa",
+                                    "EQ0009" : "Automovel"}
+            
+            chaves = equipamentos_OB0794.keys()
+            valores = equipamentos_OB0794.values()
+            
+            i = 1
+            
+            # Apresentando os equipamentos 
+            for chaves, valores in equipamentos_OB0794.items():
+            
+                print(f'({i}) Funionario {chaves} com a função de {valores}')
+                i = i + 1
+                
+            equipamento_procurado = input("Digite qual funcionario você está procurando: ")
+            print(f'o funcionario {equipamento_procurado} está na obra e com a função de {equipamentos_OB0794[equipamento_procurado]}!')
+
+            break
+
+        else :
+
+            print("Digite o indice de OB valido!")
 
     else:
-        pass
-    
-
-
-    
-    
-    
+        print("Digite uma opção valida!")
     

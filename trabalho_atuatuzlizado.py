@@ -14,6 +14,9 @@ def boas_vinda() :
     
 def pausa():
     os.system("cls")
+    
+def puxa_pausa():
+    input("\n========================== Digite ENTER para continuar! ==============================\n")
 
 '''
 ========================================= OUTPUT ============================================
@@ -415,6 +418,8 @@ while True:
                                     "Tiago" : "Apontador",
                                     "Irineu" : "Topografico"}
             
+            lista_funcionarios_OB0794 = {"Antonio", "Adriano", "Josue", "Jair", "João Paulo", "Pedro", "Dirceu", "Taigo", "Irineu"}
+            
             chaves = funcionarios_OB0794.keys()
             valores = funcionarios_OB0794.values()
             
@@ -425,6 +430,8 @@ while True:
             
                 print(f'({i}) Funionario {chaves} com a função de {valores}')
                 i = i + 1
+                
+            puxa_pausa()
 
             quantos = int(input("Quantos funcionarios você quer confirmar: "))
             contador = 1
@@ -433,28 +440,36 @@ while True:
 
             while contador <= quantos:
 
-                funcionario_procurado = input("Digite qual funcionario você está procurando: ")
+                funcionario_procurado = input("\nDigite qual funcionario você está procurando: ")
                 print(f'o funcionario {funcionario_procurado} está na obra e com a função de {funcionarios_OB0794[funcionario_procurado]}!')
 
                 contador = contador + 1
 
                 # Aqui ele vai colcoar o funcionario corrigido na lista
                 corrigidos.append(funcionario_procurado)
+                
+            puxa_pausa()
+                
+            # Coloquei para cima para que ele possa fazer a diferença antes no corrigidos ficas vazio
+            diferencas = lista_funcionarios_OB0794.difference(corrigidos)
 
             print("Esses funcionarios estão na obra e estão em sua equipe!")
 
             # Aqui ele vai ler
-            for i in corrigidos:
-                print(i)
-                corrigidos.pop(0)
+            def is_empty(corrigidos):
+                return len(corrigidos) == 0
+            
 
-                '''
-                jair            esta certo
-                jao             esta certo
-                leo             esta certo
-                '''
-
-            print("Tchau Brigaduu")
+            # Enquanto a lista não estiver vazia, ele desinfilerando
+            while not is_empty(corrigidos):
+                print(corrigidos.pop(0), " Funcionario está certo")
+                
+            puxa_pausa()
+                
+            for i in diferencas:
+                print(f'O funcionario {i} esta na obra mas não esta em sua equipe!')
+                
+            print("\nTchau Brigaduu")
 
             break
 

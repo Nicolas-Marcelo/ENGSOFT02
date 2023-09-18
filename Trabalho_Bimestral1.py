@@ -1046,7 +1046,3 @@ else :
         
     else :
         print("Tente novamente!")
-
-    else:
-        print("Digite uma opção valida!")
-    

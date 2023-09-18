@@ -193,6 +193,7 @@ def tudo():
                 
                 else:    
                     return tudo()
+                    
                     puxa_pausa()
                 
             
@@ -234,6 +235,7 @@ def tudo():
                 
                 else:    
                     return tudo()
+                    
                     puxa_pausa()
                 
                 
@@ -287,7 +289,7 @@ def tudo():
             # Seleção de qual lista quer ver
             lista = int(input("Digite a OB desejada: "))
             
-            pausa()
+            puxa_pausa()
             
             if lista == 820:
                 print("Funionarios da OB0820: ")
@@ -358,7 +360,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
                     
             elif lista == 821:
                 print("Funionarios da OB0821: ")
@@ -429,7 +431,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
 
                     
             elif lista == 825:
@@ -501,7 +503,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
 
                     
             elif lista == 826:
@@ -573,7 +575,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
 
             elif lista == 794:
                 print("Funionarios da OB0794: ")
@@ -644,7 +646,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
 
             else :
 
@@ -728,7 +730,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
             
             elif lista == 821:
 
@@ -800,7 +802,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
             
             elif lista == 825:
 
@@ -872,7 +874,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
 
             elif lista == 826:
 
@@ -944,7 +946,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
 
             elif lista == 794:
 
@@ -1016,7 +1018,7 @@ def tudo():
                     
                 print("\nTchau Brigaduu")
 
-                break
+                puxa_pausa()
             else :
 
                 print("Digite o indice de OB valido!")

@@ -1,3 +1,7 @@
+"""
+ALUNOS: NICOLAS MARCELO E ANA PONTAROLO
+"""
+
 import os
 
 # No plano inicial o software vai ser algo para me ajudar no serviço
@@ -5,8 +9,12 @@ import os
 # De que obra ela pertence e demais coisas das fotos
 # E outra função é conferir equipamentos e funcionarios 
 
+print("Digite seu nome e sua senha!")
+nome = input("Nome: ")
+senha = int(input("senha: "))
+
 def boas_vinda() :
-    print(f'Seja bem vindo {nome}, este é o software de auxilio ao auxiliar administrativo da Dalba!')
+    print(f'Seja bem vindo, este é o software de auxilio ao auxiliar administrativo da Dalba!')
     print("Dentro do software temos varias funçoes, digite o numero correspondente da função desejada!\n"
           "( 1 ) Para anexar as fotos!\n"
           "( 2 ) Para conferição de funcionarios!\n"
@@ -18,9 +26,13 @@ def pausa():
 def puxa_pausa():
     input("\n========================== Digite ENTER para continuar! ==============================\n")
     
-print("Digite seu nome e sua senha!")
-nome = input("Nome: ")
-senha = int(input("senha: "))
+def fatorial (n):
+    total, k = 1, 1
+    
+    while k <= n:
+        total, k = total * k, k + 1
+        
+    return total
 
 puxa_pausa()
 
@@ -1012,10 +1024,23 @@ def tudo():
         else:
             print("Digite uma opção valida!")
 
+# FIM DO PROGRAMA PROPRIAMENTE DITO
 
-    # Fazer outra lista com todos os nomes e fazer a diference com corrigidos
+
+# VERIFICAÇÃO DE SENHA
 
 if senha == senha_certa:
-    tudo()
+    while True:
+        tudo()
+        
 else : 
-    print("Senha incorreta")
+    print("Você digitou sua senha incorreta, para uma maior segurança precisamos que você responda uma pergunta!")
+    numero_real = int(input("Qual o numero que seu fatorial é igual a 120: "))
+
+    fatorial(numero_real)
+    
+    if numero_real == 5:
+        print("\nPermissão concedida, reinicie o programa!")
+        
+    else :
+        print("Tente novamente!")

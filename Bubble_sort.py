@@ -1,5 +1,5 @@
 def bem_vindo():
-    print("Seja bem vindo ao software ...............")
+    print("Seja bem vindo ao software que vai estruturar o bubble sort por meio de datas de admissões!!")
 
 def bubble_sort():
     tamanho_lista = len(lista_datas)

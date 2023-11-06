@@ -13,7 +13,7 @@ def lista_organizada():
     print("Nosso sistema informa que essa é a lista de funcionarios e suas datas de admissões por data!")
 
     for i in lista_datas:
-        print(f'No formato DD/MM/AAAA {i}!')
+        print(f'No formato DD/MM/AAAA {round(i)}!')
         
 
 rodadas = 0
@@ -21,11 +21,10 @@ lista_datas = []
 
 while rodadas < 3:
 
-    idade = int(input("No formato DD/MM/AAAA.\nColoque sua data de admissão: "))    
+    idade = float(input("No formato DD/MM/AAAA.\nColoque sua data de admissão: "))    
     lista_datas.append(idade)
     rodadas = rodadas + 1
 
 bem_vindo()
 bubble_sort()
 lista_organizada()
-
